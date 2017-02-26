@@ -67,6 +67,22 @@ var calculator = (function () {
         resultContainer.html(+getResultFromContainer() / 100)
     }
 
+    function cos() {
+        resultContainer.html(Math.cos(+getResultFromContainer()))
+    }
+
+    function sin() {
+        resultContainer.html(Math.sin(+getResultFromContainer()))
+    }
+
+    function tg() {
+        resultContainer.html(Math.tan(+getResultFromContainer()))
+    }
+
+    function ctg() {
+        resultContainer.html(1 / Math.tan(+getResultFromContainer()))
+    }
+
     function placeDot() {
         resultContainer.html(getResultFromContainer() + '.')
     }
@@ -101,7 +117,11 @@ var calculator = (function () {
         addition: addition,
         deleteOneSymbol: deleteOneSymbol,
         deleteAll: deleteAll,
-        placeDot: placeDot
+        placeDot: placeDot,
+        sin: sin,
+        cos: cos,
+        tg: tg,
+        ctg: ctg
     }
 })();
 
@@ -115,7 +135,11 @@ const commands = {
     "minus": calculator.subtraction,
     "multiplication": calculator.multiplication,
     "division": calculator.division,
-    "squareRoot": calculator.squareRoot
+    "squareRoot": calculator.squareRoot,
+    "cos": calculator.cos,
+    "sin": calculator.sin,
+    "tan": calculator.tg,
+    "cotan": calculator.ctg
 };
 
 $(document).ready(function () {

@@ -2,12 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <style href="css/index.css"></style>
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body>
-
-
+<div class="container calc-container">
+    <div id="result" class="result-container">
+        <h3><b>123</b></h3>
+    </div>
+    <br>
+    <div class="btn-container">
+        <div class="row text-center">
+            <div class="col-xs-3">
+                <button data-value="1" class="btn btn-default calc-btn calc-btn-number">1</button>
+            </div>
+            <div class="col-xs-3">
+                <button data-value="2" class="btn btn-default calc-btn calc-btn-number">2</button>
+            </div>
+            <div class="col-xs-3">
+                <button data-value="3" class="btn btn-default calc-btn calc-btn-number">3</button>
+            </div>
+            <div class="col-xs-3">
+                <button data-value="plus" class="btn btn-default calc-btn calc-btn-operations">+</button>
+            </div>
+        </div>
+        <br>
+        <div class="row text-center">
+            <div class="col-xs-3">
+                <button data-value="4" class="btn btn-default calc-btn calc-btn-number">4</button>
+            </div>
+            <div class="col-xs-3">
+                <button data-value="5" class="btn btn-default calc-btn calc-btn-number">5</button>
+            </div>
+            <div class="col-xs-3">
+                <button data-value="6" class="btn btn-default calc-btn calc-btn-number">6</button>
+            </div>
+            <div class="col-xs-3">
+                <button data-value="minus" class="btn btn-default calc-btn calc-btn-operations">-</button>
+            </div>
+        </div>
+        <br>
+        <div class="row text-center">
+            <div class="col-xs-3">
+                <button data-value="7" class="btn btn-default calc-btn calc-btn-number">7</button>
+            </div>
+            <div class="col-xs-3">
+                <button data-value="8" class="btn btn-default calc-btn calc-btn-number">8</button>
+            </div>
+            <div class="col-xs-3">
+                <button data-value="9" class="btn btn-default calc-btn calc-btn-number">9</button>
+            </div>
+            <div class="col-xs-3">
+                <button data-value="multiplication" class="btn btn-default calc-btn calc-btn-operations">&#215;</button>
+            </div>
+        </div>
+        <br>
+        <div class="row text-center">
+            <div class="col-xs-3">
+                <button data-value="dot" class="btn btn-default calc-btn calc-btn-operations">.</button>
+            </div>
+            <div class="col-xs-6">
+                <button data-value="0" class="btn btn-default calc-btn calc-btn-number">0</button>
+            </div>
+            <div class="col-xs-3">
+                <button data-value="division" class="btn btn-default calc-btn calc-btn-operations">&#247;</button>
+            </div>
+        </div>
+        <br>
+        <div class="row text-center">
+            <div class="col-xs-3">
+                <button data-value="squareRoot" class="btn btn-default calc-btn calc-btn-operations">&#8730;</button>
+            </div>
+            <div class="col-xs-6">
+                <button data-value="equals" class="btn btn-default calc-btn calc-btn-operations">=</button>
+            </div>
+            <div class="col-xs-3">
+                <button data-value="percent" class="btn btn-default calc-btn calc-btn-operations">%</button>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script src="js/index.js"></script>
 </body>

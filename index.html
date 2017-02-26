@@ -13,7 +13,7 @@
         <h3><b id="result"></b><img id="cursor" src="imgs/Thin_cursor.gif"></h3>
     </div>
     <br>
-    <div class="btn-container">
+    <div class="btns-container">
         <div class="row text-center">
             <div class="col-xs-3">
                 <button data-value="1" class="btn btn-default calc-btn calc-btn-number">1</button>
@@ -25,7 +25,7 @@
                 <button data-value="3" class="btn btn-default calc-btn calc-btn-number">3</button>
             </div>
             <div class="col-xs-3">
-                <button data-value="clear" class="calc-btn calc-btn-operations"><span class="background">C</span></button>
+                <button data-value="clear" class="calc-btn calc-btn-operations" style="overflow: hidden; position: relative;"><span id="back"></span>C</button>
             </div>
         </div>
         <br>
@@ -83,6 +83,26 @@
             </div>
             <div class="col-xs-3">
                 <button data-value="division" class="btn btn-default calc-btn calc-btn-operations">&#247;</button>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+                <a href="#ss" id="engineer-toggle-btn" type="button" class="dropdown-toggle text-center center-block">
+                    <span id="engineer-commutator" class="glyphicon glyphicon-triangle-bottom"></span>
+                </a>
+        </div>
+        <div id="engineer" class="row text-center hidden">
+            <div class="col-xs-3">
+                <button data-value="sin" class="btn btn-default calc-btn calc-btn-operations">sin()</button>
+            </div>
+            <div class="col-xs-3">
+                <button data-value="cos" class="btn btn-default calc-btn calc-btn-operations">cos()</button>
+            </div>
+            <div class="col-xs-3">
+                <button data-value="cotan" class="btn btn-default calc-btn calc-btn-operations">ctg()</button>
+            </div>
+            <div class="col-xs-3">
+                <button data-value="tan" class="btn btn-default calc-btn calc-btn-operations">tg()</button>
             </div>
         </div>
     </div>

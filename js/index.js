@@ -135,13 +135,18 @@ $(document).ready(function () {
 
     $(".calc-btn-operations[data-value='clear']").mouseup(function () {
         clearTimeout(pressTimer);
-        $(this).removeClass("hold");
+        $("#back").removeClass("background");
         return false;
     }).mousedown(function () {
-        $(this).addClass("hold");
+        $("#back").addClass("background");
         pressTimer = window.setTimeout(function () {
             commands['clearAll']();
         }, 1000);
         return false;
     });
+
+    $("#engineer-toggle-btn").click(function () {
+        $("#engineer").toggleClass("hidden")
+    });
+
 });

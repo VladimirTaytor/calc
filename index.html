@@ -9,8 +9,8 @@
 </head>
 <body>
 <div class="container calc-container">
-    <div id="result" class="result-container">
-        <h3><b>123</b></h3>
+    <div class="result-container">
+        <h3><b id="result"></b><img id="cursor" src="imgs/Thin_cursor.gif"></h3>
     </div>
     <br>
     <div class="btn-container">
@@ -25,7 +25,7 @@
                 <button data-value="3" class="btn btn-default calc-btn calc-btn-number">3</button>
             </div>
             <div class="col-xs-3">
-                <button data-value="plus" class="btn btn-default calc-btn calc-btn-operations">+</button>
+                <button data-value="clear" class="calc-btn calc-btn-operations"><span class="background">C</span></button>
             </div>
         </div>
         <br>
@@ -40,7 +40,7 @@
                 <button data-value="6" class="btn btn-default calc-btn calc-btn-number">6</button>
             </div>
             <div class="col-xs-3">
-                <button data-value="minus" class="btn btn-default calc-btn calc-btn-operations">-</button>
+                <button data-value="plus" class="btn btn-default calc-btn calc-btn-operations">+</button>
             </div>
         </div>
         <br>
@@ -55,7 +55,7 @@
                 <button data-value="9" class="btn btn-default calc-btn calc-btn-number">9</button>
             </div>
             <div class="col-xs-3">
-                <button data-value="multiplication" class="btn btn-default calc-btn calc-btn-operations">&#215;</button>
+                <button data-value="minus" class="btn btn-default calc-btn calc-btn-operations">-</button>
             </div>
         </div>
         <br>
@@ -67,7 +67,7 @@
                 <button data-value="0" class="btn btn-default calc-btn calc-btn-number">0</button>
             </div>
             <div class="col-xs-3">
-                <button data-value="division" class="btn btn-default calc-btn calc-btn-operations">&#247;</button>
+                <button data-value="multiplication" class="btn btn-default calc-btn calc-btn-operations">&#215;</button>
             </div>
         </div>
         <br>
@@ -75,15 +75,19 @@
             <div class="col-xs-3">
                 <button data-value="squareRoot" class="btn btn-default calc-btn calc-btn-operations">&#8730;</button>
             </div>
-            <div class="col-xs-6">
+            <div class="col-xs-3">
                 <button data-value="equals" class="btn btn-default calc-btn calc-btn-operations">=</button>
             </div>
             <div class="col-xs-3">
                 <button data-value="percent" class="btn btn-default calc-btn calc-btn-operations">%</button>
             </div>
+            <div class="col-xs-3">
+                <button data-value="division" class="btn btn-default calc-btn calc-btn-operations">&#247;</button>
+            </div>
         </div>
     </div>
 </div>
+<script src="lib/jquery.js"></script>
 <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script src="js/index.js"></script>
 </body>

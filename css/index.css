@@ -16,9 +16,20 @@ body {
     width: 100%;
     padding: 10px;
     max-height: 100px;
+    min-height: 78px;
+}
+
+#result {
+    min-height: 32px;
+}
+
+#cursor{
+    margin-left: 5px;
+    height: 16px;
 }
 
 .calc-btn {
+    border: none;
     color: #7a6563;
     width: 90px;
     height: 90px;
@@ -30,9 +41,10 @@ body {
 
 .calc-btn:hover {
     color: #7a6563;
+    background-color: #e6e6e6;
 }
 
-.calc-btn:focus{
+.calc-btn:focus {
     color: #7a6563;
 }
 
@@ -47,6 +59,12 @@ body {
 .btn-container {
     padding: 10px;
 }
+
 .col-xs-6 > .calc-btn {
     width: 210px;
+}
+
+.hold {
+    transition-duration: 1s;
+    background-color: #7a5104 !important;
 }

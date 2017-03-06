@@ -1,9 +1,8 @@
 /**
  * Created by vladimir on 06.03.17.
  */
-var calculator = (function () {
-
-    var resultContainer = $('#result');
+var calculator = (function ($) {
+    var resultContainer = $("#result");
 
     var numberOne;
     var numberTwo;
@@ -35,6 +34,10 @@ var calculator = (function () {
         } else {
             equals()
         }
+    }
+
+    function init() {
+        resultContainer = $("#result");
     }
 
     function addition() {
@@ -121,9 +124,10 @@ var calculator = (function () {
         sin: sin,
         cos: cos,
         tg: tg,
-        ctg: ctg
+        ctg: ctg,
+        init:init
     }
-})();
+})(jQuery);
 
 var commands = {
     "clear": calculator.deleteOneSymbol,

@@ -2,7 +2,7 @@ describe("Calculator Tests", function () {
     "use strict";
     var expect = chai.expect;
     var result;
-    var calculator ;
+    var calculator;
 
     before(function() {
         // Karma creates this global __html__ property that will hold all
@@ -12,6 +12,7 @@ describe("Calculator Tests", function () {
         }
         calculator = window.calculator;
         result = $('#result');
+        calculator.init();
     });
 
     it("is deleteAll() clear DOM", function () {

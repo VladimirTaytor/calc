@@ -1,0 +1,36 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mocha Tests</title>
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+    <script src="../lib/jquery.js"></script>
+    <script src="../node_modules/chai/chai.js"></script>
+    <script src="../node_modules/mocha/mocha.js"></script>
+
+    <script src="../js/calculator.js" data-cover></script>
+
+
+    <script type="text/javascript" src="../node_modules/blanket/dist/qunit/blanket.js"
+            data-cover-flags="branchTracking"></script>
+
+    <script type="text/javascript" src="../node_modules/grunt-mocha-blanket/support/mocha-blanket.js"></script>
+
+    <script>
+        window.expect = chai.expect;
+        mocha.setup('bdd');
+        if (window.PHANTOMJS) {
+            blanket.options("reporter", "../node_modules/grunt-mocha-blanket/support/grunt-reporter.js"
+            );
+        } else {
+            mocha.run();
+        }
+    </script>
+
+    <script src="test.js"></script>
+
+</head>
+<body>
+<div id="mocha"></div>
+<div id="result"></div>
+</body>
+</html>
